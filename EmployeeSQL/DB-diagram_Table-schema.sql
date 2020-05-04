@@ -1,8 +1,8 @@
 # https://app.quickdatabasediagrams.com/#/d/IVG5iX
 
-# Modify this code to update the DB schema diagram.
-# To reset the sample schema, replace everything with
-# two dots ('..' - without quotes).
+
+# To modify this code in order to update the DB schema diagram, please vist the link above and paste the revised code below:
+
 
 departments
 -
@@ -22,7 +22,7 @@ emp_no INT FK >- employees.emp_no
 employees
 -
 emp_no INT PK
-emp_title_id INT
+emp_title_id INT FK >- titles.title_id
 birth_date DATE
 first_name VARCHAR
 last_name VARCHAR
@@ -36,5 +36,5 @@ salary INT
 
 titles
 -
-title_id INT FK >- employees.emp_title_id
+title_id INT PK
 title VARCHAR
